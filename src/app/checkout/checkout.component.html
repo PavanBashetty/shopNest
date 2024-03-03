@@ -1,0 +1,49 @@
+<div *ngIf="!orderSuccessMessage; else showElseBlock">
+  <div class="checkout">
+    <h1>Checkout</h1>
+    <h4 style="text-align: center; color: green;">Total Amount: {{totalPayment | currency: 'EUR'}}</h4><br>
+    <div class="row">
+      <div class="col-sm-7">
+        <h3>Add shipping address</h3>
+        <!-- <p class="message-p">{{orderMsg}}</p> -->
+        <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)">
+          <input
+            type="text"
+            class="form-input"
+            name="email"
+            placeholder="Enter User Email"
+            [(ngModel)] = "userEmail" [disabled]="true"
+          />
+          <input
+            type="text"
+            class="form-input"
+            name="address"
+            placeholder="Enter User Address"
+            ngModel
+          />
+          <input
+            type="text"
+            class="form-input"
+            name="contact"
+            placeholder="Enter contact details"
+            ngModel
+          />
+          <button class="btn btn-primary">Order Now</button>
+        </form>
+      </div>
+      <div class="col-sm-5">
+          
+          <h4>Payment Method : <b>{{selectedPaymentMode}}</b></h4>
+          <div *ngFor="let payMethod of paymentMethods; let i=index">
+                <p>
+                    <label [for]="i"></label>
+                    <input type="radio" [id]="i" [value]="payMethod" [(ngModel)]="selectedPaymentMode">&nbsp;{{payMethod}}
+                </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #showElseBlock>
+  <h3 style="color: green; text-align: center">Your order has been placed successfully!!!!</h3>
+</ng-template>

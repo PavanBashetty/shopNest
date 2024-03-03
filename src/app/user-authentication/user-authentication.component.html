@@ -1,0 +1,26 @@
+<div class="user-auth">
+    <div class="sign-up" *ngIf="showLoginOnly; else signUpDiv">
+        <h1>User Login</h1>
+        <p class="error-p">{{authErrorMsg}}</p>
+        <form class="common-form" #userLoginForm="ngForm" (ngSubmit)="userLogin(userLoginForm.value)">
+            <input class="form-input" name="email" type="text" placeholder="Enter User Email..." ngModel/>        
+            <input class="form-input" name="password" type="password" placeholder="Enter User Password..." ngModel/>            
+            <button class="form-button" class="btn btn-primary">Login</button>
+        </form>
+        <a class="auth-toggle" (click)="openSignUpPage()">Don't have an account? Click to create one!</a>
+    </div>
+
+    <!-- signup for user -->
+    <ng-template #signUpDiv>
+        <div class="sign-up">
+            <h1>User Sign-up</h1>
+            <form class="common-form" #userSignUpForm="ngForm" (ngSubmit)="userSignUp(userSignUpForm.value)">
+                <input class="form-input" name="name" type="text" placeholder="Enter User Name..." ngModel/>
+                <input class="form-input" name="email" type="text" placeholder="Enter User Email..." ngModel/>
+                <input class="form-input" name="password" type="password" placeholder="Enter User Password..." ngModel/>        
+                <button class="form-button" class="btn btn-primary">SignUp</button>        
+            </form>
+            <a class="auth-toggle" (click)="backToLogin()">Back to Login</a>            
+        </div>
+    </ng-template>
+</div>

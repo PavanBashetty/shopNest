@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="userDetailsHeader">User ID:</div>
+        </div>
+        <div class="col-sm-4">
+            <div class="border p-2" *ngIf="userType == 'user'">{{userId}}</div>
+            <div class="border p-2" *ngIf="userType == 'seller'">{{sellerId}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="userDetailsHeader">Full Name:</div>
+        </div>
+        <div class="col-sm-4">
+            <div class="border p-2">{{name}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="userDetailsHeader">Age:</div>
+        </div>
+        <div class="col-sm-4">
+            <div class="border p-2">-</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="userDetailsHeader">Email:</div>
+        </div>
+        <div class="col-sm-4">
+            <div class="border p-2">{{email}}</div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container" *ngIf="userType == 'user'">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="userDetailsHeader">Total orders:</div>
+        </div>
+        <div class="col-sm-4">
+            <div class="border p-2">{{totalOrderCount}}</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="userDetailsHeader">Total money spent:</div>
+        </div>
+        <div class="col-sm-4">
+            <div class="border p-2">{{totalMoneySpent | currency:'EUR'}}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,400 @@
+{
+  "seller": [
+    {
+      "id": "a54d",
+      "name": "Pavan",
+      "email": "pavan@gmail.com",
+      "password": "passwordPavan",
+      "userType": "seller"
+    },
+    {
+      "id": "9c41",
+      "name": "goku",
+      "email": "goku@gmail.com",
+      "password": "passwordPavan",
+      "userType": "seller"
+    }
+  ],
+  "user": [
+    {
+      "id": "f6a3",
+      "name": "gohan",
+      "email": "gohan@gmail.com",
+      "password": "passwordPavan",
+      "userType": "user"
+    },
+    {
+      "id": "ccee",
+      "name": "sheldon",
+      "email": "shel@gmail.com",
+      "password": "passwordPavan",
+      "userType": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "e4c3",
+      "name": "iPhone",
+      "price": 952,
+      "color": "white",
+      "description": "a new iphone",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "a14d",
+      "name": "HP Laptop",
+      "price": 480,
+      "color": "silver",
+      "description": "a new laptop",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "0731",
+      "name": "Running shoes",
+      "price": 58,
+      "color": "black",
+      "description": "a new pair of shoe",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "1903",
+      "name": "Truck toy",
+      "price": 16,
+      "color": "blue",
+      "description": "a new toy in town",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "497a",
+      "name": "smart watch",
+      "price": 220,
+      "color": "black",
+      "description": "a brand new smart watch",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "5ba9",
+      "name": "Samsung tablet",
+      "price": 450,
+      "color": "black",
+      "description": "a new tablet",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Samsung_Galaxy_Tab_S3.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "1081",
+      "name": "Lego set",
+      "price": 65,
+      "color": "yellow",
+      "description": "a home lego set",
+      "image": "assets/images/lego_set.png",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "1e10",
+      "name": "Call of duty",
+      "price": 110,
+      "color": "gray",
+      "description": "a warfare video game",
+      "image": "assets/images/call_of_duty.jpg",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "7524",
+      "name": "Music keyboard",
+      "price": 20,
+      "color": "skyblue",
+      "description": "a play keyboard",
+      "image": "assets/images/music_keyboard.jpg",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "bcb0",
+      "name": "Work suit",
+      "price": 65,
+      "color": "gray",
+      "description": "a brand new suit",
+      "image": "assets/images/Coat_Two.png",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "0c41",
+      "name": "Macbook pro",
+      "price": 1500,
+      "color": "white",
+      "description": "a new macbook in market",
+      "image": "assets/images/macbook_pro.jpg",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "e958",
+      "name": "Lenevo laptop",
+      "price": 650,
+      "color": "black",
+      "description": "a new work buddy",
+      "image": "assets/images/lenevo.jpg",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "8408",
+      "name": "Dell XPS",
+      "price": 850,
+      "color": "black",
+      "description": "a brand new delll",
+      "image": "assets/images/dell.png",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "39b3",
+      "name": "Heels",
+      "price": 85,
+      "color": "red",
+      "description": "a high heels for parties",
+      "image": "assets/images/heels.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "97a0",
+      "name": "Formal shoes",
+      "price": 125,
+      "color": "black",
+      "description": "work shoes",
+      "image": "assets/images/formal_shoes.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "48c2",
+      "name": "Sneakers",
+      "price": 75,
+      "color": "white",
+      "description": "a sleek sneakers",
+      "image": "assets/images/sneakers.jpg",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "008a",
+      "name": "Washing machine",
+      "price": 3000,
+      "color": "silver",
+      "description": "a brand new washer",
+      "image": "assets/images/washing_machine.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "ee0a",
+      "name": "Vacuum cleaner",
+      "price": 350,
+      "color": "blue",
+      "description": "a cleaner for your home",
+      "image": "assets/images/vacuum_cleaner.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "4496",
+      "name": "Pan set",
+      "price": 35,
+      "color": "silver",
+      "description": "a cooking set",
+      "image": "assets/images/pan_set.jpg",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "a38b",
+      "name": "Refrigerator",
+      "price": 2600,
+      "color": "gray",
+      "description": "a huge refrigerator for home",
+      "image": "assets/images/fridge.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "a79d",
+      "name": "Table Fan",
+      "price": 10,
+      "color": "blue",
+      "description": "a need in summer",
+      "image": "assets/images/tableFan2.jpg",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "44c0",
+      "name": "Smart TV",
+      "price": 680,
+      "color": "black",
+      "description": "A brand new smart TV",
+      "image": "assets/images/smartTV.jpg",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "9c96",
+      "name": "Cargo pants",
+      "price": 15,
+      "color": "gray",
+      "description": "trekking pants",
+      "image": "assets/images/pantsTwo.png",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "69e1",
+      "name": "Jeans pants",
+      "price": 16,
+      "color": "blue",
+      "description": "a brand jeans pants",
+      "image": "assets/images/jeans_pants.jpeg",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "80e7",
+      "name": "T-shirt",
+      "price": 6,
+      "color": "white",
+      "description": "a plain tshirt",
+      "image": "assets/images/tshirtTwo.jpg",
+      "sellerId": "a54d"
+    },
+    {
+      "id": "941a",
+      "name": "Gaming mouse",
+      "price": 29,
+      "color": "black",
+      "description": "a new mouse for video games",
+      "image": "assets/images/mouse.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "093b",
+      "name": "Plastic chair",
+      "price": 15,
+      "color": "blue",
+      "description": "a simple plastic chair",
+      "image": "assets/images/plasticChair.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "e17d",
+      "name": "Work chair",
+      "price": 48,
+      "color": "black",
+      "description": "a brand new work chair",
+      "image": "assets/images/officeChair.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "34fa",
+      "name": "Cushion",
+      "price": 68,
+      "color": "gray",
+      "description": "a comfy chair",
+      "image": "assets/images/Cushion.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "a2fe",
+      "name": "Flower table",
+      "price": 55,
+      "color": "gray",
+      "description": "a beautiful flower table",
+      "image": "assets/images/flowerTable.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "2e63",
+      "name": "Study table",
+      "price": 57,
+      "color": "gray",
+      "description": "elegant study table",
+      "image": "assets/images/studyTable2.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "d933",
+      "name": "Study table",
+      "price": 42,
+      "color": "lightgray",
+      "description": "a simple study table",
+      "image": "assets/images/studyTable.png",
+      "sellerId": "9c41"
+    },
+    {
+      "id": "2be6",
+      "name": "Tea Table",
+      "price": 85,
+      "color": "gray",
+      "description": "a brand new tea table",
+      "image": "assets/images/TeaTable.png",
+      "sellerId": "9c41"
+    }
+  ],
+  "userCart": [],
+  "orders": [
+    {
+      "id": "d7fa",
+      "address": "BS13",
+      "contact": "123",
+      "userId": "ccee",
+      "totalPayment": 140.76,
+      "paymentMethod": "SEPA"
+    },
+    {
+      "id": "ff73",
+      "address": "BS14",
+      "contact": "222",
+      "userId": "ccee",
+      "totalPayment": 1532.04,
+      "paymentMethod": "SEPA"
+    },
+    {
+      "id": "0c45",
+      "address": "MPS",
+      "contact": "11",
+      "userId": "ccee",
+      "totalPayment": 91.8,
+      "paymentMethod": "Debit card"
+    },
+    {
+      "id": "d8c0",
+      "address": "NBA",
+      "contact": "11",
+      "userId": "ccee",
+      "totalPayment": 971.04,
+      "paymentMethod": "SEPA"
+    },
+    {
+      "id": "c247",
+      "address": "mm",
+      "contact": "ss",
+      "userId": "ccee",
+      "totalPayment": 459,
+      "paymentMethod": "Coupans"
+    },
+    {
+      "id": "4259",
+      "address": "BS 13",
+      "contact": "456",
+      "userId": "f6a3",
+      "totalPayment": 48.96,
+      "paymentMethod": "Credit card"
+    },
+    {
+      "id": "88cc",
+      "address": "IMA",
+      "contact": "111",
+      "userId": "f6a3",
+      "totalPayment": 115.26,
+      "paymentMethod": "SEPA"
+    },
+    {
+      "id": "67ab",
+      "address": "BS 13",
+      "contact": "989",
+      "userId": "f6a3",
+      "totalPayment": 565.08,
+      "paymentMethod": "SEPA"
+    }
+  ]
+}

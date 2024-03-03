@@ -1,0 +1,55 @@
+<div class="card">
+    <div >
+        <app-dynamic-ad></app-dynamic-ad>
+    </div>
+</div><br>
+
+<div class="card">
+    <div class="card-body">
+        <ngb-carousel *ngIf="popularProducts">
+            <ng-template *ngFor="let product of popularProducts; let i=index" ngbSlide>
+                <div class="picsum-img-wrapper">
+                    <a routerLink="/productDetails/{{product.id}}"><img class="popular-product-image" src="{{product.image}}" alt="Image not found" /></a>
+                </div>
+                <div class="carousel-caption">
+                    <h3>{{product.name}}</h3>
+                    <p>{{product.description}}</p>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div><br>
+
+<div class="card">
+    <div class="card-body">
+        <div class="product-list-wrapper">
+            <h4 class="trendyProducts" class="custom-font">Trendy Products!!!</h4>
+            <div class="row">
+                <div class="col-sm-3" *ngFor="let product of trendyProducts; let i=index">
+                    <div class="product-item">
+                        <img src="{{product.image}}"
+                            alt="">
+                        <div class="product-details">
+                            <h6 class="name-head">{{product.name}}</h6>
+                            <div class="product-price">
+                                <h6>Price: {{product.price | currency:'EUR'}}</h6>
+                            </div>
+                            <!-- <div class="product-color">
+                                <h6>Color:{{product.color}}</h6>
+                            </div> -->
+                        </div>
+                        <div class="product-footer">
+                            <a routerLink="/productDetails/{{product.id}}">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center p-1 mt-3 bg-info rounded">
+    <h5 class="font-weight-bold">
+        <a routerLink="/userAuthentication" routerLinkActive="active" style="text-decoration: none; color: black;">Login to see more products!!</a>
+    </h5>
+</div>

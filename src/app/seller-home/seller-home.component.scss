@@ -1,0 +1,16 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.form-row{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-row label {
+    width: 120px;
+    margin-right: 10px;
+    text-align: right;
+}

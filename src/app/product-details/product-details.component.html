@@ -1,0 +1,28 @@
+<div class="row product-details" *ngIf="productData; else showElseBlock">
+    <div class="col-sm-6">
+        <img class="product-image" src="{{productData.image}}" alt="Image not found">
+    </div>
+    <div class="col-sm-6">
+        <div class="details">
+            <h2>{{productData.name}}</h2>
+            <h4>Price: {{productData.price | currency:'EUR'}}</h4>
+            <div>
+                Color: <h5 [style.backgroundColor]="productData.color" class="product-color"></h5>
+            </div>
+            <h6>Description: {{productData.description}}</h6>
+            <button  type="button" class="btn btn-success" (click)="buyNow()">Buy now</button>&nbsp;
+            <button *ngIf="!removeCart" type="button" class="btn btn-info" (click)="addToCart()">Add to cart</button>
+            <button *ngIf="removeCart" type="button" class="btn btn-warning" (click)="removeFromCart(productData.id)">Remove from cart</button>
+            <div class="quantity-group">
+                <br>
+                <button type="button" (click)="handleQuantity('min')">-</button>
+                <input type="number" [(ngModel)]="productQuantity" />
+                <button type="button" (click)="handleQuantity('plus')">+</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #showElseBlock>
+    <h3 style="color: red;">Product does not exist!</h3>
+</ng-template>

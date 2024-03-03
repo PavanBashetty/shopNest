@@ -1,0 +1,31 @@
+<!-- <div class="card">
+    <div class="card-body">
+        <app-product-dashboard></app-product-dashboard>
+    </div>
+</div><br> -->
+<div>
+    <div class="card-body">
+        <div class="product-list-wrapper">
+            <div class="row">
+                <div class="col-sm-3" *ngFor="let product of completeProductList; let i=index">
+                    <div class="product-item">
+                        <img src="{{product.image}}"
+                            alt="">
+                        <div class="product-details">
+                            <h6 class="name-head">{{product.name}}</h6>
+                            <div class="product-price">
+                                <h6><span class="custom-font">Price:</span> {{product.price | currency:'EUR'}}</h6>
+                            </div>
+                            <!-- <div class="product-color">
+                                <h6>Color:{{product.color}}</h6>
+                            </div> -->
+                        </div>
+                        <div class="product-footer">
+                            <a routerLink="/userHome/productDetail/{{product.id}}">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

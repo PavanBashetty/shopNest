@@ -1,0 +1,51 @@
+<div class="product-list">
+    <h2>All product list</h2>
+    <p class="success-p">{{deleteSuccessMsg}}</p>
+    <div class="table-container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Color</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let product of productList">
+                    <tr>
+                        <td>{{product.name}}</td>
+                        <td>{{product.price | currency:'EUR'}}</td>
+                        <td>{{product.color}}</td>
+                        <td><img src="{{product.image}}" alt="Image not found"></td>
+                        <td>
+                            <fa-icon [icon]="trashIcon" (click)="deleteProduct(product.id)" title="delete"></fa-icon>&nbsp;
+                            <fa-icon [icon]="editIcon" (click)="openUpdateProductDialog(updateProductDetails,product)" title="edit"></fa-icon>                                                
+                        </td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>        
+    </div>
+</div>
+
+<ng-template #updateProductDetails>
+    <div style="text-align: center;">
+        <br>
+        <h6>Edit {{productName}}'s details</h6>
+        <div class="form-row">
+            <label for="current-price">Price: </label>&nbsp;
+            <input id="current-price" type="number" [(ngModel)]="currentPrice">
+        </div>
+        <div class="form-row">
+            <label for="current-description">Description: </label>&nbsp;
+            <input id="current-description" type="text" [(ngModel)]="currentDescription">
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary" (click)="submitUpdatedData()">Submit</button>&nbsp;
+            <button type="button" class="btn btn-secondary" (click)="closeUpdateProductDialog()">Cancel</button>
+        </div>
+        <br>
+    </div>
+</ng-template>

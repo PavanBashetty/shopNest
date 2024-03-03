@@ -1,0 +1,61 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+//For company name
+.nav h1{
+    color: blue;
+    margin: 0;
+    font-size: 36px;
+}
+h1 a{
+    color: blue;
+    text-decoration: none;
+}
+
+//For list of anchor links
+.nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    padding-left: 45px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.nav li a{
+    text-decoration: none;
+    color: black
+}
+
+//For search bar and button
+.nav .nav-search{
+    margin-top: 5px;
+    flex: 1;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.nav .nav-search input{
+    flex: 1;
+    display: flex;
+    height: 40px;
+    border: none;
+    background-color: #f0f0f0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 0px;
+    outline: none;
+}
+.nav .nav-search button{
+    color:black;
+    border: 1px solid rgb(206, 204, 204);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+    background-color: #d2cfcf;
+    cursor: pointer;
+}

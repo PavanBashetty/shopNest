@@ -1,0 +1,20 @@
+<div>
+    <ng-content></ng-content>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let product of products; let i=index">
+                <tr>
+                    <td>{{product.product}}</td>
+                    <td>{{product.price}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>  
+    <ng-content select="[product-link]"></ng-content>  
+</div>
